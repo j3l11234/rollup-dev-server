@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, 'Microsoft YaHei';
+    line-height: 1.5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #666;
+    -webkit-font-smoothing: antialiased;
+    background-color: #fbf8e9;
+    background-image: linear-gradient(to bottom, #f8f7f0 0%, #fbf8e9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f7f0', endColorstr='#fbf8e9', GradientType=0);
+}
+
+h1 {
+    font-size: 22px;
+    line-height: 3;
+    font-weight: normal;
+}
+
+h1 a {
+    color: #444;
+}
+
+h1 a:hover {
+    text-decoration: underline;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #333;
+}
+
+.clearfix:after,
+.clearfix:before {
+    display: table;
+    content: '';
+    visibility: hidden;
+    clear: both;
+    width: 0;
+    height: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 100px auto;
+}
+
+.list {
+    width: 100%;
+    float: left;
+}
+
+.list .item {
+    position: relative;
+    float: left;
+    list-style: none;
+    width: 30%;
+    height: 36px;
+    line-height: 36px;
+    margin: 1px;
+}
+
+.list .item a {
+    display: block;
+    width: 100%;
+    line-height: inherit;
+    text-indent: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    border: 1px solid transparent;
+    transition: all 300ms ease;
+}
+
+.item a:hover {
+    background-color: #fff;
+    border-radius: 5px;
+    border-color: #888;
+}
+
+.tips {
+    display: none;
+    position: absolute;
+    top: -220%;
+    width: 180px;
+    text-indent: 10px;
+    background-color: #fff;
+    border: 1px solid #888;
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px #ccc;
+    transition: all 300ms ease-in-out;
+    opacity: 0;
+    line-height: inherit;
+}
+
+.item:hover .tips {
+    display: block;
+    opacity: 1;
+    right: 0;
+}
+
+.size b {
+    font-weight: 600;
+}
