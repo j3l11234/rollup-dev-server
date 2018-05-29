@@ -1,7 +1,5 @@
 const os = require('os');
 const chalk = require('chalk');
- 
-color.black = '\x1B[39m';
 
 // 无操作
 module.exports.noop = function () { };
